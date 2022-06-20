@@ -2,6 +2,7 @@ using TestNinja.Fundamentals;
 
 namespace TestNinja.NUnitTests;
 
+[TestFixture]
 public class ReservationTests
 {
     [Test]
