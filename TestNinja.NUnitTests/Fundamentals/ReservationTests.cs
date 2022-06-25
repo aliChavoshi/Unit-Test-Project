@@ -1,6 +1,6 @@
 using TestNinja.Fundamentals;
 
-namespace TestNinja.NUnitTests;
+namespace TestNinja.NUnitTests.Fundamentals;
 
 [TestFixture]
 public class ReservationTests
@@ -11,7 +11,7 @@ public class ReservationTests
         //Arrange 
         var reservation = new Reservation();
         //Act
-        var result = reservation.CanBeCancelledBy(new User() {IsAdmin = true});
+        var result = reservation.CanBeCancelledBy(new User() { IsAdmin = true });
         //Assert
         Assert.That(result);
     }
@@ -35,7 +35,7 @@ public class ReservationTests
     public void CanBeCancelledBy_OtherUser_ReturnFalse()
     {
         //Arrange
-        var reservation = new Reservation() {MadeBy = new User()};
+        var reservation = new Reservation() { MadeBy = new User() };
         //Act
         var result = reservation.CanBeCancelledBy(new User());
         //Assert
