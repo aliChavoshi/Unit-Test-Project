@@ -11,11 +11,12 @@
 
         public int PlaceOrder(Order order)
         {
+            //store my order in database
             var orderId = _storage.Store(order);
-            
+
             // Some other work
 
-            return orderId; 
+            return orderId;
         }
     }
 
@@ -25,6 +26,6 @@
 
     public interface IStorage
     {
-        int Store(object obj);
+        int Store(Order order);
     }
 }
