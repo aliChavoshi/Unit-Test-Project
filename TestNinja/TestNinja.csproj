@@ -63,6 +63,7 @@
     <Compile Include="Mocking\EmployeeController.cs" />
     <Compile Include="Mocking\FileReader.cs" />
     <Compile Include="Mocking\InstallerHelper.cs" />
+    <Compile Include="Mocking\IVideoRepository.cs" />
     <Compile Include="Mocking\OrderService.cs" />
     <Compile Include="Mocking\Product.cs" />
     <Compile Include="Mocking\VideoService.cs" />
